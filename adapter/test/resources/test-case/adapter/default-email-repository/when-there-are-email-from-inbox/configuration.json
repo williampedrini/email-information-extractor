@@ -1,0 +1,14 @@
+{
+  "folders": ["INBOX"],
+  "host": "imap.gmail.com",
+  "id": "7b82942e-474e-4eb5-af01-9870d5d2b5ed",
+  "owner": {
+    "id": "7b82942e-474e-4eb5-af01-9870d5d2b5ed",
+    "firstName": "William",
+    "lastName": "Pedrini Custodio"
+  },
+  "password": "<password>",
+  "port": "993",
+  "protocol": "imap",
+  "username": "<username>"
+}
