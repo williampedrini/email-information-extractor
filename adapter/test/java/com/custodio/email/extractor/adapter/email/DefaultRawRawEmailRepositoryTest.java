@@ -1,6 +1,7 @@
 package com.custodio.email.extractor.adapter.email;
 
 import com.custodio.email.extractor.domain.entity.EmailAccount;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.MethodRule;
@@ -23,6 +24,7 @@ public class DefaultRawRawEmailRepositoryTest {
     private DefaultRawEmailRepository underTest;
 
     @Test
+    @Ignore
     public void whenThereAreEmailsToReaderFromInbox_shouldReturnAllEmails() {
         //given
         final var inputFullPath = format(TEST_CASES_BASE_PATH, "when-there-are-email-from-inbox/configuration.json");
