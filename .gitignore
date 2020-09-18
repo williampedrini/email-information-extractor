@@ -88,3 +88,11 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
+codeStyles
+compiler.xml
+gradle*
+jarRepositories.xml
+misc.xml
+Project_Default.xml
+vcs.xml
+.idea
