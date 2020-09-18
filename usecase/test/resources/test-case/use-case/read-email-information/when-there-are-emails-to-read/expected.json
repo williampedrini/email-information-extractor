@@ -1,0 +1,17 @@
+[
+  {
+    "cc": "test@gmail.com",
+    "fields": [
+      {
+        "content": "63,02",
+        "contentType": "APPLICATION/PDF",
+        "expression": "(TOTAL A PAGAR )(?<value>.+)",
+        "sourceName": "Fatura_Cartao_Continente_12.pdf"
+      }
+    ],
+    "from": "localhost@gmail.com",
+    "sentDate": "2020-09-01",
+    "subject": "Test",
+    "to": "richard.smith@gmail.com"
+  }
+]

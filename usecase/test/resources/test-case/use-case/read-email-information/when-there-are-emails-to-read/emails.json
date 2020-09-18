@@ -1,0 +1,15 @@
+{
+  "attachments": [
+    {
+      "contentType": "APPLICATION/PDF",
+      "fileName": "Fatura_Cartao_Continente_12.pdf"
+    }
+  ],
+  "cc": "test@gmail.com",
+  "content": null,
+  "contentType": "text/html",
+  "from": "localhost@gmail.com",
+  "sentDate": "2020-09-01",
+  "subject": "Test",
+  "to": "richard.smith@gmail.com"
+}

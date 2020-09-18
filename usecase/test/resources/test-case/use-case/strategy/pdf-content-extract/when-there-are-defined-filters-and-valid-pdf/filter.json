@@ -1,0 +1,4 @@
+{
+  "contentExpression": "(TOTAL A PAGAR )(?<value>.+)",
+  "type": "Double"
+}

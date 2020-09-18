@@ -1,0 +1,18 @@
+[
+  {
+    "extractors": [
+      {
+        "contentFormat": "PDF",
+        "field": {
+          "contentExpression": "(TOTAL A PAGAR )(?<value>.+)",
+          "type": "String"
+        },
+        "nameExpression": "(Fatura_Cartao_Continente_)(.+)\\.pdf",
+        "type": "ATTACHMENT"
+      }
+    ],
+    "fromExpression": "localhost@gmail.com",
+    "id": "afbcb1d1-1374-4c5e-9b81-00c6245714af",
+    "name": "Continente E-mail"
+  }
+]
