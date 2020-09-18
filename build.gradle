@@ -1,0 +1,27 @@
+subprojects {
+    apply plugin: 'java'
+    group = 'com.custodio.email.extractor'
+    version = '1.0.0'
+    afterEvaluate {
+        compileJava {
+            sourceCompatibility = JavaVersion.VERSION_11
+            targetCompatibility = JavaVersion.VERSION_11
+            inputs.property("moduleName", moduleName)
+            doFirst {
+                options.compilerArgs = [
+                        '--module-path', classpath.asPath,
+                ]
+                classpath = files()
+            }
+        }
+    }
+    repositories {
+        jcenter()
+    }
+    sourceSets {
+        main.java.srcDirs = ['./src/java']
+        main.resources.srcDirs = ['./src/resources']
+        test.java.srcDirs = ['./test/java']
+        test.resources.srcDirs = ['./test/resources']
+    }
+}

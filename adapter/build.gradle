@@ -1,0 +1,28 @@
+apply plugin: 'java-library'
+ext.moduleName = 'adapter'
+
+dependencies {
+    ext {
+        apacheCommonsIOVersion="1.3.2"
+        apachePdfboxVersion="2.0.21"
+        jacksonVersion="2.11.1"
+        javaxEmailVersion="1.4.7"
+        jetbrainsAnnotationsVersion="13.0"
+        junitVersion = "4.13"
+        lombokVersion="1.18.12"
+        mockitoVersion = "1.10.19"
+        springFrameworkVersion="5.2.8.RELEASE"
+    }
+    compile project(":domain")
+    compile("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
+    compile("com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}")
+    compile("javax.mail:mail:${javaxEmailVersion}")
+    compile("org.jetbrains:annotations:${jetbrainsAnnotationsVersion}")
+    compile("org.projectlombok:lombok:${lombokVersion}")
+    compile("org.springframework:spring-beans:${springFrameworkVersion}")
+    compile("org.springframework:spring-context:${springFrameworkVersion}")
+
+    testCompile("junit:junit:${junitVersion}")
+    testCompile("org.springframework:spring-test:${springFrameworkVersion}")
+    testCompile("org.mockito:mockito-all:${mockitoVersion}")
+}

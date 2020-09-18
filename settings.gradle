@@ -1,0 +1,4 @@
+rootProject.name = 'email-information-extractor'
+include 'domain'
+include 'adapter'
+include 'usecase'
